@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Web Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Interactive Web Page</h1>
+        
+        <!-- Event Handling Section -->
+        <section class="section">
+            <h2>Event Handling</h2>
+            
+            <div class="event-box">
+                <button id="clickMeBtn">Click Me</button>
+                <p id="clickOutput">Button not clicked yet</p>
+            </div>
+            
+            <div class="event-box" id="hoverBox">
+                <p>Hover over this box</p>
+                <p id="hoverOutput">Hover state: inactive</p>
+            </div>
+            
+            <div class="event-box">
+                <input type="text" id="keyInput" placeholder="Type here">
+                <p id="keyOutput">Last key pressed: </p>
+            </div>
+            
+            <div class="event-box" id="secretBox">
+                <p>Double-click or hold for 1 second</p>
+                <p id="secretOutput">Try the secret actions</p>
+            </div>
+        </section>
+        
+        <!-- Interactive Elements Section -->
+        <section class="section">
+            <h2>Interactive Elements</h2>
+            
+            <div class="interactive-box">
+                <button id="colorBtn">Change My Color</button>
+            </div>
+            
+            <div class="interactive-box">
+                <div class="gallery">
+                    <img src="image1.jpg" alt="Gallery image 1" class="active">
+                    <img src="image2.jpg" alt="Gallery image 2">
+                    <img src="image3.jpg" alt="Gallery image 3">
+                </div>
+                <div class="gallery-nav">
+                    <button id="prevBtn">Previous</button>
+                    <button id="nextBtn">Next</button>
+                </div>
+            </div>
+            
+            <div class="interactive-box">
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <button class="accordion-btn">Section 1</button>
+                        <div class="accordion-content">
+                            <p>Content for section 1</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <button class="accordion-btn">Section 2</button>
+                        <div class="accordion-content">
+                            <p>Content for section 2</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Form Validation Section -->
+        <section class="section">
+            <h2>Form Validation</h2>
+            
+            <form id="myForm">
+                <div class="form-group">
+                    <label for="username">Username (required):</label>
+                    <input type="text" id="username" required>
+                    <span class="error" id="usernameError"></span>
+                </div>
+                
+                <div class="form-group">
+                    <label for="userEmail">Email:</label>
+                    <input type="email" id="userEmail">
+                    <span class="error" id="emailError"></span>
+                </div>
+                
+                <div class="form-group">
+                    <label for="userPassword">Password (min 8 chars):</label>
+                    <input type="password" id="userPassword">
+                    <span class="error" id="passwordError"></span>
+                </div>
+                
+                <button type="submit">Submit</button>
+                <p id="formMessage"></p>
+            </form>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
